@@ -50,10 +50,47 @@
 
 ---
 
+* Multi-paradigm
+  * Object oriented
+  * Functional
+  * You decide what works best 4 U!
+
+---
+
 * Excellent tool support
 
 ---?image=assets/img/kotlin-usage.png&size=cover
 
 ---
 
+
 ![Show me the code](assets/img/talk-is-cheap-show-me-the-code.jpg)
+### Singleton pattern - Java vs Kotlin
+@snapend
+
+#### Java
+```java
+public class Singleton {
+    private static final Singleton instance;
+
+    private Singleton() {}
+
+    public static Singleton getInstance() {
+        if (instance == null)
+            instance = new Singleton();
+        return instance;
+    }
+	
+	// ... methods ...
+}
+```
+
+---
+
+#### Kotlin
+```kotlin
+object Singleton {
+	// ... methods ... 
+}
+```
+
