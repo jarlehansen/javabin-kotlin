@@ -65,6 +65,8 @@
 
 
 ![Show me the code](assets/img/talk-is-cheap-show-me-the-code.jpg)
+---
+
 ### Singleton pattern - Java vs Kotlin
 @snapend
 
