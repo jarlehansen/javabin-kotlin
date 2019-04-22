@@ -1,0 +1,42 @@
+.reveal section img {
+  border: 0;
+}
+
+.reveal code {
+  font-size: 2.5em;
+  font-style: italic;
+  padding-bottom: 0.8em;
+}
+
+.reveal .slide-background video {
+  width: 80% !important;
+  height: 85% !important;
+  left: 10%;
+}
+
+.reveal .meetup img {
+  width: 40% !important;
+}
+
+.reveal .meetup h3 {
+  position: absolute !important;
+  top: 10px !important;
+  color: black !important;
+  font-weight: 200 !important;
+}
+
+.reveal section .logos img {
+  background: none;
+}
+
+.reveal section .technipfmc img {
+  width: 53%;
+}
+
+.reveal section .nrk img {
+  width: 54%;
+}
+
+.reveal section .skatteetaten img {
+  width: 30%;
+}
