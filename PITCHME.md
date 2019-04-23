@@ -65,7 +65,29 @@
 
 
 ![Show me the code](assets/img/talk-is-cheap-show-me-the-code.jpg)
+
+
 ---
+@snap[span-100]
+### Companion object - closest to static you will come
+@snapend
+
+* No static methods in Kotlin
+* Functions doesn't cover your needs? Use companion objects
+
+---
+
+```kotlin
+// companion object (or how to do "static" in Kotlin)
+class ClassWithCompanion {
+	// other methods that aren't "static"...?
+
+    companion object {
+        fun staticMethod() = "Im static..."
+    }
+}
+```
+
 
 
 ---
@@ -99,3 +121,62 @@ object Singleton {
 }
 ```
 
+
+---
+@snap[span-100]
+### Operator overloading
+@snapend
+ 
+* Like in C++, you can overload various operators (+, -, += etc.)
+* Creating a 3D game? Simply multiply two vectors to get a cross-product!
+* Don't have to be part of the class definition, create an extension function if you miss something!
+ 
+---
+
+#### Example of defining one yourself
+```kotlin
+class Vector(val x : Float, val y: Float, val z : Float) {
+    // ... other method ...
+
+    // cross product
+    operator fun times(otherVec : Vector) : Vector {
+        return Vector(y*otherVec.z - z*otherVec.y,
+                      z*otherVec.x - x*otherVec.z,
+                      x*otherVec.y - y*otherVec.x)
+    }
+}
+
+// ---
+// can multiply two vector objects and get a new vector back (the cross product)
+val crossProd = Vector(0.0, 1.0, 0.0)*Vector(1.0, 0.0, 0.0)
+```
+
+---
+
+#### Defintion using extension function
+```kotlin
+operator fun Float.times(vector : Vector) : Vector {
+    return Vector(this*vector.x, this*vector.y, this*vector.z)
+}
+```
+
+---
+
+#### Example in standard library - list add
+```kotlin
+val primes = mutableListOf(2, 3, 5)
+primes += 7
+// list now contains: 2, 3, 5, 7
+```
+---
+
+
+@snap[span-100]
+### What we didn't cover
+@snapend
+
+[comment]: <> (Remove if we actually cover one of these)
+* Sealed classes
+* Pattern matching with `when`
+* Clever-casting with `is` and `as`
+* ...
