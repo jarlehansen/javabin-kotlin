@@ -193,5 +193,6 @@ primes += 7
 * Sealed classes
 * Pattern matching with `when`
 * Clever-casting with `is` and `as`
+* Init-blocks and multiple constructors
 * Standard OOP concepts that are similar to Java (interfaces, abstract classes and how they are used)
 * ...
