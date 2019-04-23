@@ -11,6 +11,8 @@ b) HelloWorldfalse
 c) HelloWorldtrue  
 d) will not compile  
 
+[answer](https://github.com/angryziber/kotlin-puzzlers/blob/master/src/types/manyHelloes/Rationale.md)
+
 ---
 
 <iframe class="stretch" src="https://pl.kotl.in/09BlviouY?theme=darcula"></iframe>
@@ -19,5 +21,7 @@ a) K
 b) NullPointerException   
 c) IllegalStateException  
 d) Will not compile  
+
+[answer](https://github.com/angryziber/kotlin-puzzlers/blob/master/src/nullability/abstractNull/Rationale.md)
 
 ---
