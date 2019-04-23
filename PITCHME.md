@@ -168,8 +168,21 @@ val primes = mutableListOf(2, 3, 5)
 primes += 7
 // list now contains: 2, 3, 5, 7
 ```
+
+---
+@snap[span-100]
+### Kotlin scripting
+@snapend
+
+```kotlin
+// TODO: see file filestats.kts
+```
+
 ---
 
+* Syntax-check happens before run
+* Use any Kotlin JVM functionality
+* For more advanced features consider using KScript
 
 ---
 
