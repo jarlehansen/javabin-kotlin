@@ -171,6 +171,20 @@ primes += 7
 ---
 
 
+---
+
+
+@snap[span-100]
+### Kotlin isn't simply a JVM language...
+@snapend
+
+* Compiles to...
+   * JavaScript
+   * WebAssembly
+   * Android
+   * KotlinNative (iOS, Android, native binaries etc.)
+
+---
 @snap[span-100]
 ### What we didn't cover
 @snapend
