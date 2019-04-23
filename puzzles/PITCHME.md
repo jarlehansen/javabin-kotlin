@@ -4,6 +4,6 @@
 @snapend
 ---
 
-<iframe src="https://pl.kotl.in/RUvXzOwi7?theme=darcula&from=2&to=6"></iframe>
+<iframe class="stretch" src="https://pl.kotl.in/RUvXzOwi7?theme=darcula&from=2&to=6"></iframe>
 
 ---
