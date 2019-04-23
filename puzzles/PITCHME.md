@@ -15,7 +15,7 @@ d) will not compile
 
 ---
 
-<iframe class="stretch" src="https://pl.kotl.in/09BlviouY?theme=darcula"></iframe>
+<iframe class="stretch" src="https://pl.kotl.in/EjIqU9kfh?theme=darcula"></iframe>
 
 a) K  
 b) NullPointerException   
