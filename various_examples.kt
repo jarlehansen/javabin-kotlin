@@ -151,9 +151,16 @@ val displayAddress =  person?.address?.streetName ?: "none"
 /* 
  * Reified generics
  */
-// TODO: simple example
+// usuaully you do not have access to class reference when  using generics (lost at runtime)
+fun <T> noClassReference(someVal : T) = println("something")
+
+// reified generics can do it! but they have to be 
+inline fun <reified T> classReference(someVal : T) = T::class.java
+
+// probably a little too boring :( 
 
 
+	
 /*
  * Extension functions
  */
@@ -193,9 +200,5 @@ highFiveBlock {
 	highFive()
 	highFive()
 }
-
-
-
-
 
 
