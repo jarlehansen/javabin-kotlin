@@ -12,3 +12,12 @@ c) HelloWorldtrue
 d) will not compile
 
 ---
+
+<iframe class="stretch" src="https://pl.kotl.in/09BlviouY?theme=darcula"></iframe>
+
+a) K
+b) NullPointerException
+c) IllegalStateException
+d) Will not compile
+
+---
