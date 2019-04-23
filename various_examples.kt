@@ -62,6 +62,8 @@ when(numberOfSidesInASquare) {
     else -> println("")
 }
 
+val artist = "Leonardo DaVinci"
+println(artist[2]) // access characters in a String like you would in an array
 
 
 /* 
@@ -81,19 +83,69 @@ fun square(number: Int) : Int {
 	return number * number
 }
 
+// TODO. should probably cover default values? and named parameters...
 
 /* 
  * Classes
  */ 
-// TODO: add regular classes, open classes 
+// classes are final by default
+class YouShallNotSubclass
+
+// use open to make it subclassable
+open class SubclassMe
+
+
+// equals, hashcode, copy and a lot of other goodies :)
+// could probably have handled whitespace and tolowercase as well, but kept it simple :P 
+data class Person(val firstName : String, val lastName : String, val company : String) {
+	val email : String
+        get() = "$firstName.$lastName@$company.com"
+}
+
+// no need for getters or setters (for ANY class, not just data class)
+// val/var determines if you get getters or both getters and setters
+// just threat them as properties anyway ;) 
+class Car(val plateNumber : String, var ownerName : String)
+
+val bugattiChiron = Car("KH34534534", "Nils-Arne")
+println("${bugattiChiron.plateNumber}") // only getter because val
+bugattiChiron.ownerName = "Kjell-Britt"  // both setter and getter because var
+println("${bugattiChiron.ownerName}")
+
+
+/*
+ * Collections, Functional programming and functional composition
+*/
+// immutable list
+// also have mutableListOf for mutable lists and many other ways of creating collections
+val computers = listOf("Commodore 64", "ZX Spectrum", "Amiga 500", "Atari 800")
+val computersThatDoesntHaveNumbers = computers.filter {
+	it.matches(".*\\d*.*")
+}
+
+listOf(1,3,4,5).map {
+	it*2
+}.forEach {
+	println("Number: $it")
+}
+
+// TODO: should probably have some more...
 
 
 
 /*
  * Nullability, safe operator and elvis operator
  */
-// TODO
+// Kotlin differentiates between nullable and non-nullable types
+// all types so far has been non-nullable
+var iCanBeNull : Int? = 2
+var iCanAlsoBeNull : String? = null
 
+// assume we have a class Person with an address object as a child.
+// Both address and Person can be null.
+val displayAddress =  person?.address?.streetName ?: "none"
+
+// TODO: should probably have more cool examples here
 
 
 /* 
@@ -116,12 +168,31 @@ fun Int.square() = this*this
 
 
 /*
- * DSL
+ * DSLs
  */
+// many ways to create DSLs in Kotlin :)
+fun String.applyToEachLetter(func : (char: Char) -> Char) : String {
+	return this.toCharArray().map(func).joinToString("")
+}
 
 	
 
+// using class bodies to create DSLs
+class FunctionContext {
+	fun highFive() = println("High five!")
+}
 
+fun highFiveBlock(body : FunctionContext.() -> Unit) {
+	val functionContext = FunctionContext()
+	functionContext.body()
+}
+
+highFiveBlock {
+	// just high-five 3 times for some reason...
+	highFive()
+	highFive()
+	highFive()
+}
 
 
 
