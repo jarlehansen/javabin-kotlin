@@ -89,7 +89,7 @@ open class SubclassMe
 @snapend
 
 ---?image=assets/img/companion-cube.jpg&size=cover
-@snap[span-100]
+@snap[north]
 #### Companion cube from Portal - kinda static
 @snapend
 
