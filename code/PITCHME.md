@@ -187,6 +187,18 @@ highFiveBlock {
 ### Reified generics / inline functions
 @snapend
 
+* Now possible to get type info from generics at runtime!
+* Inline functions => function code is actually put inline (in the middle of your code)
+
+---
+
+```kotlin
+// usuaully you do not have access to class reference when  using generics (lost at runtime)
+fun <T> noClassReference(someVal : T) = println("something")
+
+// reified generics can do it! but they have to be 
+inline fun <reified T> classReference(someVal : T) = T::class.java
+```
 
 
 ---
