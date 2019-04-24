@@ -8,8 +8,11 @@
 * History of Kotlin
 * Why Kotlin?
 * Code
-* Code
-* Code
+  * val / vars
+  * classes
+  * java interop
+  * nullability
+  * extension functions
 * Summary
 * Bonus: Puzzles
 
