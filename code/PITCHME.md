@@ -197,7 +197,7 @@ highFiveBlock {
 ### Reified generics / inline functions
 @snapend
 
----?image=assets/img/generics.jpg&size=cover
+---?image=assets/img/generics.jpg&size=auto 70%
 
 ---
 
