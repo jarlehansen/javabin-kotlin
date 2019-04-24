@@ -115,7 +115,7 @@ class ClassWithCompanion {
 ### Singleton pattern - Java vs Kotlin
 @snapend
 
----?image=assets/img/singleton.jpg&size=80% auto
+---?image=assets/img/singleton.jpg&size=auto 100%
 
 ---
 
