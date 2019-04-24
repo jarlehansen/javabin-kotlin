@@ -88,6 +88,8 @@ open class SubclassMe
 ### Companion object - closest to static you will come
 @snapend
 
+---?image=assets/img/companion-cube.jpg&size=cover
+
 * No static methods in Kotlin
 * Functions doesn't cover your needs? Use companion objects
 
