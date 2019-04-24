@@ -139,10 +139,55 @@ object Singleton {
 ### DSL - domain specific languages
 @snapend
 
+* Several ways to create fluent DSLs in Kotlin
+* They feel like they are part of the language if you do it correctly! :)
+
+---
+
+#### Function or Extension function with function parameter
+```kotlin
+fun String.applyToEachLetter(func : (char: Char) -> Char) : String {
+	return this.toCharArray().map(func).joinToString("")
+}
+
+
+// example usage: 
+"AsFf".applyToEachLetter {
+	it.toLowerCase()
+};
+// returns "asff"
+```
+
+---
+
+#### Functions evaluated in the context of a class
+```kotlin
+// using class bodies to create DSLs
+class FunctionContext {
+	fun highFive() = println("High five!")
+}
+
+fun highFiveBlock(body : FunctionContext.() -> Unit) {
+	val functionContext = FunctionContext()
+	functionContext.body()
+}
+
+// usage:
+highFiveBlock {
+	// just high-five 3 times for some reason...
+	highFive()
+	highFive()
+	highFive()
+}
+```
+
+
 ---
 @snap[span-100]
 ### Reified generics / inline functions
 @snapend
+
+
 
 ---
 @snap[span-100]
