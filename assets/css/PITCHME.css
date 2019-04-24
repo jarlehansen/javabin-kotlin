@@ -2,12 +2,6 @@
   border: 0;
 }
 
-.reveal code {
-  font-size: 2.5em;
-  font-style: italic;
-  padding-bottom: 0.8em;
-}
-
 .reveal .slide-background video {
   width: 80% !important;
   height: 85% !important;
