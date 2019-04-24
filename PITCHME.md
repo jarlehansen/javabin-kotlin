@@ -79,6 +79,7 @@
 
 ---?gist=markydawn/447d71f92c277bc7cc8dda0f3ff95921&lang=kotlin
 
+---
 @snap[span-100]
 ### Singleton pattern - Java vs Kotlin
 @snapend
