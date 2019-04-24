@@ -11,6 +11,7 @@
 * Code
 * Code
 * Summary
+* Bonus: Puzzles
 
 ---?image=assets/img/kart1.png&size=65% auto
 
@@ -75,22 +76,9 @@
 * No static methods in Kotlin
 * Functions doesn't cover your needs? Use companion objects
 
----
 
-```kotlin
-// companion object (or how to do "static" in Kotlin)
-class ClassWithCompanion {
-	// other methods that aren't "static"...?
+---?gist=markydawn/447d71f92c277bc7cc8dda0f3ff95921&lang=kotlin
 
-    companion object {
-        fun staticMethod() = "Im static..."
-    }
-}
-```
-
-
-
----
 @snap[span-100]
 ### Singleton pattern - Java vs Kotlin
 @snapend
