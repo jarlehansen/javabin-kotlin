@@ -76,8 +76,18 @@
 * No static methods in Kotlin
 * Functions doesn't cover your needs? Use companion objects
 
+---
 
----?gist=markydawn/447d71f92c277bc7cc8dda0f3ff95921&lang=kotlin
+```kotlin
+// companion object (or how to do "static" in Kotlin)
+class ClassWithCompanion {
+	// other methods that aren't "static"...?
+
+    companion object {
+        fun staticMethod() = "Im static..."
+    }
+}
+```
 
 ---
 @snap[span-100]
