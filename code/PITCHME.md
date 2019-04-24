@@ -88,7 +88,8 @@ open class SubclassMe
 ### Companion object - closest to static you will come
 @snapend
 
----?image=assets/img/companion-cube.jpg&size=cover&title=Companion cube from Portal - kinda static
+---?image=assets/img/companion-cube.jpg&size=cover
+#### Companion cube from Portal - kinda static
 
 ---
 * No static methods in Kotlin
