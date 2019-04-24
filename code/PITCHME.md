@@ -4,6 +4,87 @@
 @snapend
 ---
 @snap[span-100]
+### Ranges
+@snapend
+
+---
+
+```kotlin
+// 1 up to including 10
+for (number in 1..10) {
+    println("Number: $number")
+}
+
+// Output:
+// Number: 1
+// Number: 2
+// Number: 3
+// Number: 4
+// Number: 5
+// Number: 6
+// Number: 7
+// Number: 8
+// Number: 9
+// Number: 10
+```
+
+---
+
+```kotlin
+// 1 to 10 (non-inclusive)
+for (number in 1 until 10) {
+    println("Number: $number")
+}
+
+// Output:
+// Number: 1
+// Number: 2
+// Number: 3
+// Number: 4
+// Number: 5
+// Number: 6
+// Number: 7
+// Number: 8
+// Number: 9
+```
+
+---
+
+```kotlin
+for (number in 10 downTo 1 step 2) {
+    println("Number: $number")
+}
+
+// Output:
+// Number: 10
+// Number: 8
+// Number: 6
+// Number: 4
+// Number: 2
+```
+
+---
+@snap[span-100]
+### Classes
+@snapend
+
+---
+
+```kotlin
+// classes are final by default
+class YouShallNotSubclass
+
+// use open to make it subclassable
+open class SubclassMe
+```
+
+---
+
+* Many framworks including Spring needs open classes (plugins exist!)
+* Now back to live-coding!
+
+---
+@snap[span-100]
 ### Companion object - closest to static you will come
 @snapend
 
