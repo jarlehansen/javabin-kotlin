@@ -197,6 +197,10 @@ highFiveBlock {
 ### Reified generics / inline functions
 @snapend
 
+---?image=assets/img/generics.jpg&size=cover
+
+---
+
 * Now possible to get type info from generics at runtime!
 * Inline functions => function code is actually put inline (in the middle of your code)
 
