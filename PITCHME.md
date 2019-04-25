@@ -63,12 +63,12 @@
 
 * Excellent tool support
 
----?image=assets/img/kotlin-usage.png&size=cover
-
 ---
 
 *Kotlin is in itself a polyglot language. It brings together the powerful capabilities from many different languages. The creators of Kotlin took the good parts from various languages and combined them into one highly approachable and pragmatic language.*
 - Venkat Subramaniam
+
+---?image=assets/img/kotlin-usage.png&size=cover
 
 ---
 
