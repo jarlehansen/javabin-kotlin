@@ -85,6 +85,32 @@ open class SubclassMe
 
 ---
 @snap[span-100]
+### Singleton pattern - Java vs Kotlin
+@snapend
+
+---?image=assets/img/singleton.jpg&size=auto 70%
+
+---
+
+#### Java
+```java
+public class Singleton {
+    private static final Singleton instance;
+
+    private Singleton() {}
+
+    public static Singleton getInstance() {
+        if (instance == null)
+            instance = new Singleton();
+        return instance;
+    }
+	
+	// ... methods ...
+}
+```
+
+---
+@snap[span-100]
 ### Companion object - closest to static you will come
 @snapend
 
@@ -107,32 +133,6 @@ class ClassWithCompanion {
     companion object {
         fun staticMethod() = "Im static..."
     }
-}
-```
-
----
-@snap[span-100]
-### Singleton pattern - Java vs Kotlin
-@snapend
-
----?image=assets/img/singleton.jpg&size=auto 70%
-
----
-
-#### Java
-```java
-public class Singleton {
-    private static final Singleton instance;
-
-    private Singleton() {}
-
-    public static Singleton getInstance() {
-        if (instance == null)
-            instance = new Singleton();
-        return instance;
-    }
-	
-	// ... methods ...
 }
 ```
 
@@ -312,4 +312,3 @@ File(".").walk().filter {
 * Clever-casting with `is` and `as`
 * Init-blocks and multiple constructors
 * Standard OOP concepts that are similar to Java (interfaces, abstract classes and how they are used)
-* ...

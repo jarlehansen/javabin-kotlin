@@ -72,8 +72,4 @@
 
 ---
 
-
-
----
-
 ![Show me the code](assets/img/talk-is-cheap-show-me-the-code.jpg)
