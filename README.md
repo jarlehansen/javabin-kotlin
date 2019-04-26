@@ -16,17 +16,16 @@ Kotlin is named after an island near St. Petersburg, Russia, where most of the K
 
 ## Bakgrunn
 
-* Arbeidet med Kotlin startet i 2010 hos JetBrains
-* 1.0 versjonen ble sluppet i starten av 2016
+* Work on Kotlin Started in 2010 at JetBrains
+* 1.0 version released in the beginning of 2016
 
 ---
 
 ## Hvorfor Kotlin?
 
-* Fungerer med Java
+* Works well with Java
   * Java -> Kotlin
   * Kotlin -> Java
-* Er laget for å være mer konsist, produktivt og tryggere alternativ til Java. Skal kunne brukes i alle tilfeller hvor Java brukes i dag.
 https://insights.stackoverflow.com/survey/2018/#technology-most-loved-dreaded-and-wanted-languages
 
 * Null safety
@@ -35,14 +34,11 @@ https://insights.stackoverflow.com/survey/2018/#technology-most-loved-dreaded-an
 
 ---
 
-## Hva brukes Kotlin til?
- (undersølkelse fra 2018)
-* 80% er Android utviklere
-  * I 2017 ble Kotlin et offisielt språk for Android utvikling (https://techcrunch.com/2017/05/17/google-makes-kotlin-a-first-class-language-for-writing-android-apps/)
+## What is Kotlin used for?
+ (from 2018)
+* 80% is Android developers
+  * In 2017 Kotlin was an official language for Android development (https://techcrunch.com/2017/05/17/google-makes-kotlin-a-first-class-language-for-writing-android-apps/)
 * 31% back-end
-  * Mange populære biblioteker/rammeverk lager egne Kotlin tilpassninger
-  * Spring støtte
-  * Jackson (JSON)
 (https://thenewstack.io/what-we-learned-about-kotlins-growth-this-year/)
 
 ---
