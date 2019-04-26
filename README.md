@@ -14,14 +14,14 @@ Kotlin is named after an island near St. Petersburg, Russia, where most of the K
 
 ---
 
-## Bakgrunn
+## Background
 
 * Work on Kotlin Started in 2010 at JetBrains
 * 1.0 version released in the beginning of 2016
 
 ---
 
-## Hvorfor Kotlin?
+## Why Kotlin?
 
 * Works well with Java
   * Java -> Kotlin
