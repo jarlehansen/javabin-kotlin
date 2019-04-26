@@ -30,5 +30,3 @@ d) Will not compile
 
 [Puzzles taken from angryziber](https://github.com/angryziber/kotlin-puzzlers)  
 https://github.com/angryziber/kotlin-puzzlers
-
----
