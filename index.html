@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="images/kotlin-logo2.png"></section>
+				
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+						<li>History of Kotlin</li>
+						<li>Why Kotlin?</li>
+						<li>Code</li>
+						<ul>
+							<li>val / vars</li>
+							<li>classes</li>
+							<li>Java interop</li>
+							<li>nullability</li>
+							<li>extension functions</li>
+						</ul>
+						<li>Summary</li>
+						<li>Bonus: Puzzles</li>
+					</ul>
+				</section>
+
+				<section data-background="images/kart1.png" data-background-size="65%"></section>
+
+				<section data-background="images/kart2.png" data-background-size="65%"></section>
+
+				<section data-background="images/jetbrains-products.png" data-background-size="65%"></section>
+
+				<section data-background="images/kotlin-github.jpg" data-background-size="70%"></section>
+
+				<section data-background="images/kotlin-digi.jpg" data-background-size="70%"></section>
+
+				<section data-background="images/hvorfor-kotlin.jpg" data-background-size="70%"></section>
+
+				<section>
+					<img src="images/most-loved.png" height="40%" width="40%"/>
+					<h4>Stack Overflow Developer survey 2019</h4>
+				</section>
+
+				<section>
+					<img src="images/most-dreaded.png" height="40%" width="40%" />
+				</section>
+
+				<section>
+					<h2>Why Kotlin?</h2>
+					<ul>
+						<li>Interoperability with Java</li>
+						<ul>
+							<li>Java -> Kotlin</li>
+							<li>Kotlin -> Java</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<ul>
+						<li>Less code to achieve the same functionality</li>
+						<ul>
+							<li style="font-style: italic">Rough estimates indicate approximately a 40% cut in the number of lines of code (Jetbrains)</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<ul>
+						<li>Useful features</li>
+						<ul>
+							<li>Null safety</li>
+							<li>Extension functions</li>
+							<li>Data classes</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<ul>
+						<li>Multi-paradigm</li>
+						<ul>
+							<li>Object oriented</li>
+							<li>Functional</li>
+							<li>You decide what works for you!</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<p style="font-style: italic; font-size: 80%;">
+							Kotlin is in itself a polyglot language. It brings together the powerful capabilities from many different languages. The creators of Kotlin took the good parts from various languages and combined them into one highly approachable and pragmatic language.
+					</p>
+					<p>- Venkat Subramaniam</p>
+				</section>
+
+				<section data-background="images/kotlin-usage.png"></section>
+
+				<section data-background="images/talk-is-cheap-show-me-the-code.jpg" data-background-size="70%"></section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

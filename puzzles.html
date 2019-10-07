@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+						<iframe class="stretch" src="https://pl.kotl.in/RUvXzOwi7?theme=darcula&from=2&to=6"></iframe>
+
+						<p>
+						What will it print?<br/>
+						a) HelloWorld<br/>
+						b) HelloWorldfalse<br/>
+						c) HelloWorldtrue<br/>
+						d) will not compile
+						</p>
+						<a href="https://github.com/angryziber/kotlin-puzzlers/blob/master/src/types/manyHelloes/Rationale.md">answer</a>
+				</section>
+
+				<section>
+						<iframe class="stretch" src="https://pl.kotl.in/EjIqU9kfh?theme=darcula"></iframe>
+
+						<p>
+						What will it print?<br/>
+						a) K<br/>
+						b) NullPointerException<br/>
+						c) IllegalStateException<br/>
+						d) Will not compile
+						</p>
+						<a href="https://github.com/angryziber/kotlin-puzzlers/blob/master/src/nullability/abstractNull/Rationale.md">answer</a>
+				</section>
+
+				<section>
+						<p>Puzzles taken from angryziber</p>
+						<p><a href="https://github.com/angryziber/kotlin-puzzlers">https://github.com/angryziber/kotlin-puzzlers</a></p>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

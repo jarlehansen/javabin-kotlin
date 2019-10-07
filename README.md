@@ -1,8 +1,3 @@
-* https://gitpitch.com/jarlehansen/javabin-kotlin
-* https://gitpitch.com/jarlehansen/javabin-kotlin?p=code
-* https://gitpitch.com/jarlehansen/javabin-kotlin?p=summary
-* https://gitpitch.com/jarlehansen/javabin-kotlin?p=puzzles
-
 # Kotlin
 ---
 
